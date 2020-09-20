@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-html>
+<html>
   <head>
     <script
   src="https://code.jquery.com/jquery-3.5.1.min.js"
@@ -11,5 +11,60 @@ html>
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
+    <h1 id='cal'>Calculator</h1>
+    <table class='num&oper'>
+      <tr id='FisrtRwo'> 
+        <td>
+          <input type="text" id='inputVal' >
+        </td>
+      </tr>
+         <tr id='operatorRow'> 
+            <td>
+      <input id='expo' type="button" value='^' onclick="insrt('^')">
+      <input id='sym'  type="button" value='(' onclick="insrt('(')">
+      <input id='sym'  type="button" value=')' onclick="insrt(')')">
+      <input id='clear'type="button" value='c' onclick="reset('')">
+        </td>
+      </tr>
+
+
+      <tr id='SecondRwo'> 
+        <td>
+      
+        <input id='numOne'  type="button" value='1' onclick="insrt(1)">
+        <input id='numTwo'  type="button" value='2' onclick="insrt(2)">
+        <input id='numThree'type="button" value='3' onclick="insrt(3)">
+        <input id='add'     type="button" value='+' onclick="insrt('+')">
+      
+        </td>
+      </tr>
+      <tr id='ThirdRwo'> 
+        <td>
+        <input id='numFour' type="button" value='4' onclick="insrt(4)">
+        <input id='numFive' type="button" value='5' onclick="insrt(5)">
+        <input id='numSix'  type="button" value='6' onclick="insrt(6)">
+        <input id='sub'     type="button"  value='-'onclick="insrt('-')">
+        </td>
+      </tr>
+      <tr id='FourthRwo'> 
+        <td>
+        <input id='numSeven' type="button" value='7' onclick="insrt(7)">
+        <input id='numEight' type="button" value='8' onclick="insrt(8)">
+        <input id='numNine'  type="button" value='9' onclick="insrt(9)">
+        <input id='sub'      type="button" value='*' onclick="insrt('*')">
+        </td>
+      </tr>
+      <tr id='FifthhRwo'> 
+        <td>
+          <input id='Dot'   type="button" value='.' onclick="insrt('.')">
+        <input id='Zero'  type="button" value='0' onclick="insrt(0)">
+        <input id='Equal' type="button" value='='  onclick="eql('=')">
+        <input id='div'   type="button" value='/' onclick="insrt('/')">
+        </td>
+      </tr>
+    </table>
+    <script src="script.js">
+      
+    </script>
   </body>
 </html>
