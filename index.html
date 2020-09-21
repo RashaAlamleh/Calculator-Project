@@ -7,7 +7,7 @@
   crossorigin="anonymous"></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>repl.it</title>
+    <title>Calculator</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
@@ -21,49 +21,48 @@
       </tr>
          <tr id='operatorRow'> 
             <td>
-      <input class='btn' id='expo' type="button" value='^' onclick="insrt('^')">
-      <input class='btn' id='sym'  type="button" value='(' onclick="insrt('(')">
-      <input class='btn' id='sym'  type="button" value=')' onclick="insrt(')')">
-      <input class='btn' id='clear'type="button" value='c' onclick="reset('')">
+      <button class='btn' id='expo' onclick="insrt('^')">^</button>
+      <button class='btn' id='sym'  onclick="insrt('(')">(</button>
+      <button class='btn' id='sym'  onclick="insrt(')')">)</button>
+      <button class='btn' id='clear'onclick="reset('')">C</button>
         </td>
       </tr>
       <tr id='SecondRwo'> 
         <td>
       
-        <input class='btn'  id='numOne'  type="button" value='1' onclick="insrt(1)">
-        <input class='btn' id='numTwo'  type="button" value='2' onclick="insrt(2)">
-        <input class='btn' id='numThree'type="button" value='3' onclick="insrt(3)">
-        <input class='btn' id='add'     type="button" value='+' onclick="insrt('+')">
+        <button class='btn' id='numOne'  onclick="insrt(1)">1</button>
+        <button class='btn' id='numTwo'  onclick="insrt(2)">2</button>
+        <button class='btn' id='numThree'onclick="insrt(3)">3</button>
+        <button class='btn' id='add'     onclick="insrt('+')">+</button>
         </td>
       </tr>
       <tr id='ThirdRwo'> 
         <td>
-        <input class='btn' id='numFour' type="button" value='4' onclick="insrt(4)">
-        <input class='btn' id='numFive' type="button" value='5' onclick="insrt(5)">
-        <input class='btn' id='numSix'  type="button" value='6' onclick="insrt(6)">
-        <input class='btn' id='sub'     type="button"  value='-'onclick="insrt('-')">
+        <button class='btn' id='numFour' onclick="insrt(4)">4</button>
+        <button class='btn' id='numFive' onclick="insrt(5)">5</button>
+        <button class='btn' id='numSix'  onclick="insrt(6)">6</button>
+        <button class='btn' id='sub'     onclick="insrt('-')">-</button>
         </td>
       </tr>
       <tr id='FourthRwo'> 
         <td>
-        <input class='btn' id='numSeven' type="button" value='7' onclick="insrt(7)">
-        <input class='btn' id='numEight' type="button" value='8' onclick="insrt(8)">
-        <input class='btn' id='numNine'  type="button" value='9' onclick="insrt(9)">
-        <input class='btn' id='sub'      type="button" value='*' onclick="insrt('*')">
+        <button class='btn' id='numSeven' onclick="insrt(7)">7</button>
+        <button class='btn' id='numEight' onclick="insrt(8)">8</button>
+        <button class='btn' id='numNine'  onclick="insrt(9)">9</button>
+        <button class='btn' id='sub'      onclick="insrt('*')">*</button>
         </td>
       </tr>
       <tr id='FifthhRwo'> 
         <td>
-        <input class='btn' id='Dot'   type="button" value='.' onclick="insrt('.')">
-        <input class='btn' id='Zero'  type="button" value='0' onclick="insrt(0)">
-        <input class='btn' id='Equal' type="button" value='='  onclick="eql('=')">
-        <input class='btn' id='div'   type="button" value='/' onclick="insrt('/')">
+        <button class='btn' id='Dot'   onclick="insrt('.')">.</button>
+        <button class='btn' id='Zero'  onclick="insrt(0)">0</button>
+        <button class='btn' id='Equal' onclick="eql('=')">=</button>
+        <button class='btn' id='div'   onclick="insrt('/')">/</button>
         </td>
       </tr>
     </table>
     </div>
     <script src="script.js">
-    
     </script>
   </body>
 </html>
